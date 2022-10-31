@@ -1,0 +1,45 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000
+  };
+
+  
+  .modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    transition: all 0.4s
+  };
+
+  .order-list{
+    display: grid;
+    grid-template-columns: 10% 20% 50% 20%;
+  }
+
+  .order-place-btn {
+    color: white;
+   background-color: red;
+   border: none;
+   border-radius: 20px;
+    width: 140px;
+    height: 35px;
+   font-size: 16px;
+     
+  }
+
+  .order-place-btn:hover{
+    box-shadow: 0px 0px 14px 3px rgba(243, 0, 0, 0.69);
+-webkit-box-shadow: 0px 0px 14px 3px rgba(255, 0, 0, 0.69);
+-moz-box-shadow: 0px 0px 14px 3px rgba(253, 0, 0, 0.69);
+cursor: pointer;
+  }
