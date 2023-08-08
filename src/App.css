@@ -1,4 +1,7 @@
-body{
-    font-family: sans-serif;
-    background-color: rgb(211, 211, 211);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #fffde8;
 }

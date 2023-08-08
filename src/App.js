@@ -1,22 +1,24 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import FastFood from "./Components/Pages/FastFood/FastFood";
-import HotDeals from "./Components/Pages/HotDeals/HotDeals";
-import Order from "./Components/Pages/Order/Order";
-import SideBar from "./Components/Sidebar/SideBar";
+import React from "react";
+import "./App.css"; // Importing a CSS file
+import FAB from "./Components/FAB"; // Importing the FAB component
+import Navbar from "./Components/Navbar"; // Importing the Navbar component
+import Todos from "./Components/Todo/Todos"; // Importing the Todos component
 
-function App() {
+// Main component for the application
+const App = () => {
   return (
-    <BrowserRouter>
-      <SideBar>
-        <Routes>
-          <Route exact path="/" element={<FastFood />} />
-          <Route exact path="/hot-deals" element={<HotDeals />} />
-          
-        </Routes>
-      </SideBar>
-    </BrowserRouter>
-  );
-}
+    <div>
+      {/* Render the Navbar */}
+      <Navbar />
 
+      {/* Render the Todos */}
+      <Todos />
+
+      {/* Render the FAB */}
+      <FAB />
+    </div>
+  );
+};
+
+// Export the App component
 export default App;
